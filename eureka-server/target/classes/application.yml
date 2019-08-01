@@ -1,0 +1,15 @@
+server:
+  port: 8761
+
+
+  error:
+    whitelabel:
+      enabled: false
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    enableSelfPreservation: false
+

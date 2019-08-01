@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="employeeservice" />
+        <module name="accountservice" />
+        <module name="zuul-server" />
+        <module name="employee-details-service" />
+        <module name="user-service" />
+        <module name="Leave" />
+        <module name="spring-cloud-eureka-example" />
+        <module name="request-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="accountservice" target="1.8" />
+      <module name="employee-details-service" target="1.8" />
+      <module name="employeeservice" target="1.8" />
+      <module name="Leave" target="1.8" />
+      <module name="Leave-Service" target="1.8" />
+      <module name="leaves-service" target="1.8" />
+      <module name="manager-details-service" target="1.8" />
+      <module name="nodeservice" target="1.8" />
+      <module name="request-service" target="1.8" />
+      <module name="spring-cloud-eureka-example" target="1.8" />
+      <module name="UMS" target="1.8" />
+      <module name="user-service" target="1.8" />
+      <module name="zuul-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Leave" options="-parameters" />
+      <module name="Leave-Service" options="-parameters" />
+      <module name="UMS" options="-parameters" />
+      <module name="employee-details-service" options="-parameters" />
+      <module name="employeeservice" options="-parameters" />
+      <module name="leaves-service" options="-parameters" />
+      <module name="manager-details-service" options="-parameters" />
+      <module name="request-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+    </option>
+  </component>
+</project>

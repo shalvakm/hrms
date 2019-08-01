@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/HRMS-Microservice.iml" filepath="$PROJECT_DIR$/.idea/HRMS-Microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leave/Leave.iml" filepath="$PROJECT_DIR$/Leave/Leave.iml" />
+      <module fileurl="file://$PROJECT_DIR$/accountservice/accountservice.iml" filepath="$PROJECT_DIR$/accountservice/accountservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/employee-details-service/employee-details-service.iml" filepath="$PROJECT_DIR$/employee-details-service/employee-details-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/employeeservice/employeeservice.iml" filepath="$PROJECT_DIR$/employeeservice/employeeservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/request-service/request-service.iml" filepath="$PROJECT_DIR$/request-service/request-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/spring-cloud-eureka-example.iml" filepath="$PROJECT_DIR$/eureka-server/spring-cloud-eureka-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/zuul-server/zuul-server.iml" />
+    </modules>
+  </component>
+</project>
