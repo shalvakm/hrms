@@ -52,7 +52,7 @@ public class EmployeeController {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity request= new HttpEntity( jsonHeader, httpHeaders );
-        String st = restTemplate.postForObject( "http://localhost:9093/api/remleave", request, String.class );
+        String st = restTemplate.postForObject( "http://localhost:9090/api/leave-service/api/remleave", request, String.class );
         return employeeRepository.save(employee);
     }
 

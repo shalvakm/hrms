@@ -72,7 +72,7 @@ public class ReimbursementController {
     private static boolean checkManagerId(long empid, long mgrid){
 
      try {
-         final String uri = "http://localhost:9091/api/employee/" + empid;
+         final String uri = "http://localhost:9090/api/user-service/api/employee" + empid;
          RestTemplate restTemplate = new RestTemplate();
          String result = restTemplate.getForObject(uri, String.class);
 

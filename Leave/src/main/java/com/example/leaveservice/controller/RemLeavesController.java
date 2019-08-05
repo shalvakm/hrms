@@ -79,5 +79,25 @@ public class RemLeavesController {
     }
 
 
+    public boolean checkRemLeaves(long employeeId, long diff, String type) throws ResourceNotFoundException {
+        RemLeaves rem = remLeavesRepository.findById(employeeId)
+                .orElseThrow(() -> new ResourceNotFoundException("Emp not found for this id :: " + employeeId));
+
+        if(type.equals("casual")) {
+            if(rem.getCasual() >= diff)
+                return true;
+            else
+                return false;
+        }
+        else if (type.equals("sick")) {
+            if(rem.getSick() >= diff)
+                return true;
+            else
+                return false;
+        }
+        else
+            return true;
+    }
+
 
 }

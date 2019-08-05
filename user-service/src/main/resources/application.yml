@@ -1,0 +1,45 @@
+server:
+  port: 9091
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    healthcheck:
+      enabled: false
+    lease:
+      duration: 5
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/userservice
+    username: postgres
+    password: root
+    initialize: true
+  batch:
+    job:
+      enabled: false
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp:
+          use_jdbc_metadata_defaults: false
+        ddl-auto: update
+#  batch:
+#    initialize-schema: ALWAYS
+
+
+#server:
+#  contextPath: /spring-boot-restful-post-json
+
+#management:
+#  endpoint:
+#    health:
+#      show-details: always

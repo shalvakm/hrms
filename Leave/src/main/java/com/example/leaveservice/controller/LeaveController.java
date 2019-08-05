@@ -50,10 +50,15 @@ public class LeaveController {
 
     @PostMapping("")
     public @ResponseBody
-    String createLeave(@Valid @RequestBody Leave leave) {
+    String createLeave(@Valid @RequestBody Leave leave) throws ResourceNotFoundException {
+
+        Date d1 = leave.getStartingDate();
+        Date d2 = leave.getEndingDate();
+        long d = d2.getTime() - d1.getTime();
+        long diff = TimeUnit.DAYS.convert(d, TimeUnit.MILLISECONDS);
 
 
-        if(checkManagerId(leave.getEmployeeId(), leave.getManagerId()) && checkDate(leave.getStartingDate(), leave.getEndingDate())) {
+        if(checkManagerId(leave.getEmployeeId(), leave.getManagerId()) && checkDate(leave.getStartingDate(), leave.getEndingDate()) && remLeavesController.checkRemLeaves(leave.getEmployeeId(), diff, leave.getLeaveType()) ) {
             leaveRepository.save(leave);
             return "success";
         }
@@ -97,7 +102,7 @@ public class LeaveController {
     private static boolean checkManagerId(long empid, long mgrid){
 
      try {
-         final String uri = "http://localhost:9091/api/employee/" + empid;
+         final String uri = "http://localhost:9090/api/user-service/api/employee" + empid;
          RestTemplate restTemplate = new RestTemplate();
          String result = restTemplate.getForObject(uri, String.class);
 
@@ -124,6 +129,7 @@ public class LeaveController {
             return true;
         }
     }
+
 
     @PutMapping("/{employeeId}/{status}/{type}/{noOfDays}")
     public @ResponseBody
@@ -161,5 +167,7 @@ public class LeaveController {
 
 //        return "success";
     }
+
+
 
 }

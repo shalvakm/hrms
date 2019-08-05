@@ -8,16 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="employeeservice" />
         <module name="accountservice" />
+        <module name="request-service" />
         <module name="zuul-server" />
+        <module name="spring-cloud-eureka-example" />
         <module name="employee-details-service" />
         <module name="user-service" />
         <module name="Leave" />
-        <module name="spring-cloud-eureka-example" />
-        <module name="request-service" />
+        <module name="Authorization" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="accountservice" target="1.8" />
+      <module name="Authorization" target="1.8" />
       <module name="employee-details-service" target="1.8" />
       <module name="employeeservice" target="1.8" />
       <module name="Leave" target="1.8" />
@@ -34,6 +36,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Authorization" options="-parameters" />
       <module name="Leave" options="-parameters" />
       <module name="Leave-Service" options="-parameters" />
       <module name="UMS" options="-parameters" />

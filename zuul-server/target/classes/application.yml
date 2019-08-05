@@ -21,6 +21,15 @@ zuul:
     employee:
       path: /employee-by-service/**
       serviceId: employee-service
+    user:
+      path: /user-service/**
+      serviceId: user-service
+    reimbursement:
+      path: /reimbursement-service/**
+      serviceId: reimbursement-service
+    leave:
+      path: /leave-service/**
+      serviceId: leave-service
 
 spring:
   application:
