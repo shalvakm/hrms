@@ -1,5 +1,6 @@
 package org.exampledriven.zuul;
 
+import org.apache.catalina.filters.CorsFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -11,6 +12,8 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.UrlResource;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -28,5 +31,6 @@ public class SpringCloudZuulExampleApplication {
         SpringApplication.run(sources, args);
 
     }
+
 
 }

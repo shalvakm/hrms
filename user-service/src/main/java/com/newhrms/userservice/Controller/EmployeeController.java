@@ -10,6 +10,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
@@ -27,6 +28,11 @@ public class EmployeeController {
 
     @Autowired
     private RestTemplate restTemplate;
+
+    @Autowired
+    private KafkaTemplate<String, RemLeaves> kafkaTemplate;
+
+    private static final String TOPIC = "HrmsTopic";
 
     @GetMapping("")
     public List<Employee> getAllEmployees() {
@@ -49,10 +55,15 @@ public class EmployeeController {
                 "\"employeeId\":" + employee.getEmployeeId() +
                 "}";
 
-        HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.setContentType(MediaType.APPLICATION_JSON);
-        HttpEntity request= new HttpEntity( jsonHeader, httpHeaders );
-        String st = restTemplate.postForObject( "http://localhost:9090/api/leave-service/api/remleave", request, String.class );
+//        HttpHeaders httpHeaders = new HttpHeaders();
+//        httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+//        HttpEntity request= new HttpEntity( jsonHeader, httpHeaders );
+//        String st = restTemplate.postForObject( "http://localhost:9090/api/leave-service/api/remleave", request, String.class );
+
+
+        kafkaTemplate.send(TOPIC, new RemLeaves(employee.getEmployeeId(), 16, 16, 0));
+
+
         return employeeRepository.save(employee);
     }
 

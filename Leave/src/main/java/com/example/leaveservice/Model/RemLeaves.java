@@ -11,10 +11,10 @@ public class RemLeaves {
     private long employeeId;
 
     @Column(name = "casual")
-    private long casual = 16;
+    private long casual ;
 
     @Column(name = "sick")
-    private long sick = 16;
+    private long sick;
 
     @Column(name = "unpaid")
     private long unpaid;
