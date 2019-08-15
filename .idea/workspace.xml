@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a029338-aed5-4769-a96a-7654e6350b0f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leave/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Leave/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leave/src/main/java/com/example/leaveservice/Model/RemLeaves.java" beforeDir="false" afterPath="$PROJECT_DIR$/Leave/src/main/java/com/example/leaveservice/Model/RemLeaves.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/request-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/request-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/newhrms/userservice/Controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/newhrms/userservice/Controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/java/org/exampledriven/zuul/SpringCloudZuulExampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-server/src/main/java/org/exampledriven/zuul/SpringCloudZuulExampleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/target/classes/org/exampledriven/zuul/SpringCloudZuulExampleApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-server/target/classes/org/exampledriven/zuul/SpringCloudZuulExampleApplication.class" afterDir="false" />
-    </list>
+    <list default="true" id="8a029338-aed5-4769-a96a-7654e6350b0f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
