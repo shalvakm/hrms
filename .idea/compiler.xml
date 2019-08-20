@@ -2,6 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+      </profile>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -12,8 +15,8 @@
         <module name="zuul-server" />
         <module name="spring-cloud-eureka-example" />
         <module name="employee-details-service" />
-        <module name="user-service" />
         <module name="Leave" />
+        <module name="user-service" />
         <module name="Authorization" />
       </profile>
     </annotationProcessing>

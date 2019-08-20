@@ -74,7 +74,37 @@
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>com.github.derjust</groupId>
+			<artifactId>spring-data-dynamodb</artifactId>
+			<version>5.0.4</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb -->
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-dynamodb</artifactId>
+			<version>1.11.415</version>
+		</dependency>
+
 	</dependencies>
+
+<!--	<profiles>-->
+<!--		<profile>-->
+<!--			<id>allow-snapshots</id>-->
+<!--			<activation><activeByDefault>true</activeByDefault></activation>-->
+<!--			<repositories>-->
+<!--				<repository>-->
+<!--					<id>snapshots-repo</id>-->
+<!--					<url>https://oss.sonatype.org/content/repositories/snapshots</url>-->
+<!--					<releases><enabled>false</enabled></releases>-->
+<!--					<snapshots><enabled>true</enabled></snapshots>-->
+<!--				</repository>-->
+<!--			</repositories>-->
+<!--		</profile>-->
+<!--	</profiles>-->
+
 
 	<dependencyManagement>
 		<dependencies>
@@ -85,7 +115,16 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+<!--			<dependency>-->
+<!--				<groupId>com.amazonaws</groupId>-->
+<!--				<artifactId>aws-java-sdk-bom</artifactId>-->
+<!--				<version>1.11.612</version>-->
+<!--				<type>pom</type>-->
+<!--				<scope>import</scope>-->
+<!--			</dependency>-->
+
 		</dependencies>
+
 	</dependencyManagement>
 
 

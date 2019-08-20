@@ -51,9 +51,9 @@ public class EmployeeController {
 //	@RequestMapping(value = "/users", produces = "application/json", method = RequestMethod.POST)
     public @ResponseBody Employee createEmployee(@Valid @RequestBody Employee employee) {
 
-        String jsonHeader = "{" +
-                "\"employeeId\":" + employee.getEmployeeId() +
-                "}";
+//        String jsonHeader = "{" +
+//                "\"employeeId\":" + employee.getEmployeeId() +
+//                "}";
 
 //        HttpHeaders httpHeaders = new HttpHeaders();
 //        httpHeaders.setContentType(MediaType.APPLICATION_JSON);

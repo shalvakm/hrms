@@ -32,14 +32,11 @@ spring:
         temp:
           use_jdbc_metadata_defaults: false
         ddl-auto: update
-#  batch:
-#    initialize-schema: ALWAYS
 
-
-#server:
-#  contextPath: /spring-boot-restful-post-json
-
-#management:
-#  endpoint:
-#    health:
-#      show-details: always
+amazon:
+  access:
+    key: AKIAU5E3F25W7N6NFRFF
+    secret-key: 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
+  region: us-east-2
+  end-point:
+    url: dynamodb.us-east-2.amazonaws.com
