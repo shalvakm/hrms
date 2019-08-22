@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a029338-aed5-4769-a96a-7654e6350b0f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/request-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/newhrms/userservice/Controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/newhrms/userservice/Controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/newhrms/userservice/Controller/EmpDynamoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/newhrms/userservice/Controller/EmpDynamoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/newhrms/userservice/Models/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/newhrms/userservice/Models/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/newhrms/userservice/Models/EmployeeDynamo.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/newhrms/userservice/Models/EmployeeDynamo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
@@ -29,6 +28,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="22" />
+    <option name="width" value="1346" />
+    <option name="height" value="686" />
+  </component>
   <component name="ProjectId" id="1OScb7E8XGdoxM1cMKjcNmc1ija" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -39,15 +44,15 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/UMS/src/main/java/com/example/ums" />
-      <recent name="$PROJECT_DIR$/Leave Service/src/main/java/com/example/leaveservice" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/employeeservice/src/main/resources" />
-      <recent name="$PROJECT_DIR$/employeeservice/src/main/java/com/example/employeeservice" />
-      <recent name="$PROJECT_DIR$/employeeservice/src/main/java/com/example/employeeservice/service" />
+      <recent name="$PROJECT_DIR$/employeeservice/src/main/resources/templates" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.newhrms.userservice.Models" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.newhrms.userservice.Models" />
@@ -56,9 +61,12 @@
       <recent name="com.example.leaveservice.config" />
       <recent name="com.example.leaveservice.Model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/UMS/src/main/java/com/example/ums" />
+      <recent name="$PROJECT_DIR$/Leave Service/src/main/java/com/example/leaveservice" />
       <recent name="$PROJECT_DIR$/employeeservice/src/main/resources" />
-      <recent name="$PROJECT_DIR$/employeeservice/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/employeeservice/src/main/java/com/example/employeeservice" />
+      <recent name="$PROJECT_DIR$/employeeservice/src/main/java/com/example/employeeservice/service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -94,6 +102,20 @@
             <State>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>

@@ -16,6 +16,11 @@ public class Address implements Serializable {
     private String city;
     private String zipCode;
 
+
+    public Address() {
+
+    }
+
     public Address(String addressLine1, String addressLine2, String state, String city, String zipCode) {
         this.addressLine1 = addressLine1;
         this.addressLine2 = addressLine2;
@@ -23,6 +28,7 @@ public class Address implements Serializable {
         this.city = city;
         this.zipCode = zipCode;
     }
+
 
     @DynamoDBAttribute
     public String getAddressLine1() {
@@ -69,4 +75,14 @@ public class Address implements Serializable {
         this.zipCode = zipCode;
     }
 
+    @Override
+    public String toString() {
+        return "Address{" +
+                "addressLine1='" + addressLine1 + '\'' +
+                ", addressLine2='" + addressLine2 + '\'' +
+                ", state='" + state + '\'' +
+                ", city='" + city + '\'' +
+                ", zipCode='" + zipCode + '\'' +
+                '}';
+    }
 }

@@ -35,8 +35,8 @@ spring:
 
 amazon:
   access:
-    key: AKIAU5E3F25W7N6NFRFF
-    secret-key: 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
+    key: AKIAU5E3F25W5NFDQ5H3
+    secret-key: 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
   region: us-east-2
   end-point:
     url: dynamodb.us-east-2.amazonaws.com
